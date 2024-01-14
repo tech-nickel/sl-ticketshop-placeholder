@@ -6,21 +6,90 @@ html, body {
 html {
   display: table;
   font-family: Lato, "Segoe UI", Avenir, Ubuntu, Tahoma, Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #333;
 }
 
 body {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  background-color: #000;
+  color: #fff;
 }
 
-h1 {
-  font-size: 4em;
-  font-weight: normal;
-  text-transform: lowercase;
+@media (min-width: 768px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+article {
+  display: block;
+  text-align: left;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+a {
+  color: #939393;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #e96656;
 }
 
 svg {
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+  transition: fill 0.2s ease;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+svg:hover {
+  fill: #e96656;
+}
+
+#logo {
+  width: 9%; /* Adjust this percentage according to your preference */
+  max-width: 20%; /* Ensure that the image doesn't exceed its original size */
+}
+
+footer {
+  font-size: 15px;
+  margin-top: auto;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  background-color: #000;
+}
+
+footer a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #e96656;
 }
