@@ -1,6 +1,4 @@
-tiny "coming soon" page
+SL Ticket Place Holder
 =======================
 
-A _tiny_ "coming soon" page. Can serve as a starting point for a better one.
-
-[Try the demo!](https://evanhahn.github.io/tiny-coming-soon-page/)
+This placeholder page is used during inactive periods between events when no ticket shop is required.
