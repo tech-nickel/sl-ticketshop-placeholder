@@ -28,19 +28,12 @@ body {
   min-height: 100%;
 }
 
-@media (min-width: 768px) {
-  body {
-    padding-top: 100px;
-  }
-  #logo {
-    padding-top: 200px; /* Adjust top positioning for larger screens */
-  }
-}
-
 article {
   position: relative; /* Ensures content is positioned in the document flow */
   z-index: 1; /* Higher than the video's z-index to ensure visibility */
   color: white; /* Adjust color as needed for visibility against the video */
+  padding: 10px; /* Even padding on all sides */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
   transform: translateY(-50%); /* Adjust based on content's height for vertical centering */
   width: 100%; /* Full width */
   display: block;
@@ -89,11 +82,10 @@ svg:hover {
 
 /* Adjust the logo size and positioning */
 #logo {
-  position: absolute; /* Change to absolute for better control */
-  top: 50px; /* Adjust this value to position the logo above the article */
-  left: 50%; /* Center the logo horizontally */
-  transform: translateX(-50%); /* Adjust horizontal positioning */
+  position: relative; /* Change to absolute for better control */
   width: auto; /* Adjust width as needed */
+  padding-top: 10px;
+  padding-bottom: 150px;
   max-width: 200px; /* Max width to ensure it's not too large */
   z-index: 2; /* Ensure logo is above the video background */
 }
@@ -117,4 +109,3 @@ footer a {
 footer a:hover {
   color: #e96656;
 }
-
